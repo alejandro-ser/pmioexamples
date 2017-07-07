@@ -1,0 +1,187 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:  ProcessMaker I/O Examples
+Version:  1.0
+Last changes:  07/07/2017 [  ]
+Assigned to:  Alejandro Serna / Luis Suarez
+-------------------------------------------------------------------*/
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #595959;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+
+/* --------------------
+*     Headers
+* --------------------- */
+
+body.home nav.navbar {
+  border-top: none;
+  border-bottom: none;
+  z-index: 1;
+}
+
+body.home nav.navbar-default .navbar-nav>li>a.login-btn,
+body.home nav.navbar-default .navbar-nav>li>a.login-btn:visited {
+  background-color: #3397e1;
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body.home nav.navbar-default .navbar-nav>li>a.login-btn:hover {
+  background-color: #3087c7;
+  color: #ffffff;
+}
+
+body.home nav.navbar-default .navbar-nav>li>a.sign-btn,
+body.home nav.navbar-default .navbar-nav>li>a.sign-btn:visited {
+  background-color: #1fbc99;
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body.home nav.navbar-default .navbar-nav>li>a.sign-btn:hover {
+  background-color: #0b9778;
+  color: #ffffff;
+}
+
+/* * * Main Menu * * */
+
+nav.navbar-default {
+  background-color: #fdfdfd;
+  border-color: #f1f1f1;
+}
+
+nav.navbar,
+body.home.use-cases nav.navbar,
+body.home.documentation nav.navbar,
+body.home.feedback nav.navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+a.navbar-brand {
+  padding: 2px 0px;
+}
+
+nav.navbar>.container-fluid .navbar-brand {
+  margin-left: -5px;
+}
+
+nav.navbar>.container-fluid .navbar-brand img {
+  width: 220px;
+}
+
+ul.navbar-right {
+  margin-right: -30px;
+}
+
+nav.navbar-default .navbar-nav>li>a {
+  color: #7c7c7c;
+}
+
+nav.navbar-default .navbar-nav>li>a:focus,
+nav.navbar-default .navbar-nav>li>a:hover {
+  color: #3397E1;
+  text-decoration: underline;
+}
+
+nav.navbar-default .navbar-nav>.active>a,
+nav.navbar-default .navbar-nav>.active>a:focus,
+nav.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #fdfdfd;
+  color: #3397E1;
+  text-decoration: underline;
+}
+
+nav.navbar-default .navbar-nav>li.dropdown>a.dropdown-toggle {
+  padding-left: 30px;
+  color: #000101;
+  border-left: 1px solid #f1f1f1;
+}
+
+nav.navbar-default .navbar-nav>li.dropdown>ul.dropdown-menu {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* * * Dropdowns * * */
+
+li.dropdown>a.dropdown-toggle>img {
+  width: 35px;
+  height: 35px;
+  height: auto;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+/* Submenu */
+
+nav.examples__submenu.navbar {
+  min-height: 43px;
+}
+
+nav.examples__submenu .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* SIDEBAR */
+
+div.examples__sidebar {
+  height: 92.3vh;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #2979b4;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background-color: #2b6590;
+}
+
+.nav-pills > li > a {
+  color: #fff;
+  border-radius: 0;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #2b6590;
+}
+
+/* Examples content */
+
+div.examples__content-wrapper {
+  padding: 20px;
+  background-color: #5b7080;
+  height: 100%;
+  min-height: 85.8vh;
+}
+
+div.examples__main-content {
+  background-color: #f5f5f5;
+  height: 78.4vh;
+  padding: 30px;
+}
+
+/* Examples content sidebar */
+
+div.examples__sidebar-content {
+  height: 85.8vh;
+  padding: 20px;
+  background-color: #165380;
+}
