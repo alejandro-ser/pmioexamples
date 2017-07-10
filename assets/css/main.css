@@ -3,7 +3,7 @@
 
 Project:  ProcessMaker I/O Examples
 Version:  1.0
-Last changes:  07/07/2017 [  ]
+Last changes:  10/07/2017 [  ]
 Assigned to:  Alejandro Serna / Luis Suarez
 -------------------------------------------------------------------*/
 
@@ -15,7 +15,7 @@ body {
   background: #ffffff;
   color: #595959;
   font-family: 'Montserrat';
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
@@ -216,6 +216,12 @@ div.examples__sidebar {
   background-color: #2979b4;
 }
 
+div.examples__sidebar .nav-pills > li.active,
+div.examples__sidebar .nav-stacked > li {
+  border-bottom: 1px solid #2c6d9c;
+  margin-top: 0;
+}
+
 div.examples__sidebar .nav-pills > li.active > a,
 div.examples__sidebar .nav-pills > li.active > a:focus,
 div.examples__sidebar .nav-pills > li.active > a:hover {
@@ -247,6 +253,7 @@ div.examples__content-wrapper {
 div.examples__main-content {
   background-color: #f0f0f0;
   padding: 30px;
+  height: auto;
 }
 
 div.examples__main-content h5 {
@@ -290,6 +297,12 @@ div.examples__main-content .panel-body {
   font-size: 1.2rem;
 }
 
+div.examples__main-content .panel-body textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
 /* Examples Import */
 
 div.examples__content-import .panel-body .btn--flat {
@@ -318,6 +331,19 @@ div.examples__sidebar-content {
   padding: 20px;
   background-color: #165380;
   border-left: 1px solid #1b5d8d;
+  z-index: 250;
+  transition: transform 275ms cubic-bezier(.5,.08,0,1);
+}
+
+div.examples__sidebar-content.examples__sidebar-content--visible {
+  display: none;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+div.examples__sidebar-content.examples__sidebar-content--hidden {
+  -webkit-transform: translate(100%);
+  transform: translate(100%);
 }
 
 div.examples__sidebar-content .panel {
@@ -330,6 +356,10 @@ div.examples__sidebar-content .panel-heading {
   border-color: #cccccc;
 }
 
+div.examples__sidebar-content .panel-title {
+  font-size: 1.4rem;
+}
+
 div.examples__sidebar-content__footer {
   position: absolute;
   right: 0;
@@ -339,9 +369,41 @@ div.examples__sidebar-content__footer {
   text-align: left;
   color: #103b5b;
   border-top: 1px solid #103b5b;
+  background-color: #165380;
 }
 
 div.examples__sidebar-content__footer .fa {
   font-size: 2.5rem;
   cursor: pointer;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  div.examples__sidebar-content__footer {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  div.examples__sidebar-content__footer {
+    display: block;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

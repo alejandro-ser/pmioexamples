@@ -22,7 +22,7 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mainmenu" aria-expanded="false">
             <span class="sr-only">Menu</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,7 +34,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-mainmenu">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Readme <span class="sr-only">(current)</span></a></li>
             <li><a href="import.html">Import</a></li>
@@ -58,8 +58,16 @@
           <div class="row">
             <nav class="examples__submenu navbar navbar-default">
               <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-submenu" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <div class="collapse navbar-collapse" id="navbar-submenu">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -90,7 +98,8 @@
                     <h3 class="panel-title">Host</h3>
                   </div>
                   <div class="panel-body">
-                    <p><b>URL</b> https://your.domain/api/v1/</p>
+                    <textarea name="name" rows="2" placeholder="URL https://your.domain/api/v1/">
+                    </textarea>
                     <button type="button" name="button" class="btn--flat">Paste</button>
                   </div>
                 </div>
@@ -100,7 +109,8 @@
                     <h3 class="panel-title">Token key</h3>
                   </div>
                   <div class="panel-body">
-                    <p>Key for text</p>
+                    <textarea name="name" rows="5" placeholder="Key for text">
+                    </textarea>
                     <button type="button" name="button" class="btn--flat">Paste</button>
                   </div>
                 </div>
@@ -155,7 +165,11 @@
   <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript">
-
+    $(document).ready(function() {
+      $('.fa-angle-double-right').click(function() {
+        $('.examples__sidebar-content').toggleClass('examples__sidebar-content--visible');
+      });
+    });
   </script>
 </body>
 </html>
