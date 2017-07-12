@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="assets/img/logo_black.svg" alt="ProcessMaker I/O">
+            <img src="assets/img/processmaker_examples-portal.svg" alt="ProcessMaker I/O">
           </a>
         </div>
 
@@ -50,8 +50,9 @@
         <div class="examples__sidebar no-float col-xs-12 col-sm-2 col-md-2 col-lg-2">
           <ul class="nav nav-pills nav-stacked">
             <li role="presentation" class="active"><a href="#">Onboarding</a></li>
-            <li role="presentation"><a href="#">NDA</a></li>
-            <li role="presentation"><a href="#">Slack</a></li>
+            <li role="presentation"><a href="#"><img src="assets/img/google.jpg" alt="Google"> <span>NDA Agreement Signing Process</span></a></li>
+            <li role="presentation"><a href="#"><img src="assets/img/slack.ico" alt="Slack"> <span>Slack - Leave Absence Request Process</span></a></li>
+            <li role="presentation"><a href="#"><img src="assets/img/mailchimp.png" alt="Mailchimp"> <span>User Subscription with Mailchimp service</span></a></li>
           </ul>
         </div>
         <div class="examples__content no-float col-xs-12 col-sm-10 col-md-10 col-lg-10">
@@ -71,14 +72,13 @@
                   <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/img/user.jpg" alt="User">
-                        Joan River <span class="caret"></span>
+                        <img src="assets/img/test-user.jpg" alt="User">
+                        Test <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="readme.html"><img src="assets/img/test-user.jpg" alt="Test"> Test</a></li>
+                        <li><a href="import.html"><img src="assets/img/alice.jpg" alt="Alice"> Alice</a></li>
+                        <li><a href="home.html"><img src="assets/img/bob.jpg" alt="Bob"> Bob</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -86,9 +86,10 @@
               </div><!-- /.container-fluid -->
             </nav>
           </div>
-          <div class="row is-flex">
-            <div class="examples__content-wrapper col-xs-12 col-sm-8 col-md-8 col-lg-8">
-              <div class="examples__main-content">
+          <div class="row">
+            <div class="examples__content-wrapper col-xs-12 col-sm-8 col-md-8 col-lg-8" id="site-wrapper">
+              <div class="examples__content-canvas" id="site-canvas">
+                <div class="examples__main-content">
                 <h5>BPMN file to start and documentation</h5>
                 <div class="examples__main-content__icons"><i class="fa fa-download"></i><a href="#">BPMN file</a></div>
                 <div class="examples__main-content__icons"><i class="fa fa-file-text-o"></i><a href="#">Description</a></div>
@@ -115,41 +116,40 @@
                   </div>
                 </div>
                 <button type="button" name="button" class="btn--action">Save key and host</button>
-              </div>
-            </div>
-            <div class="examples__sidebar-content col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Show request
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                </div>
+                <div class="examples__sidebar-content" id="site-menu">
+                  <i class="examples__sidebar-content__footer">Show</i>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Show request
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Show request
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Show request
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="examples__sidebar-content__footer">
-                <i class="fa fa-angle-double-right"></i>
               </div>
             </div>
           </div>
@@ -165,11 +165,32 @@
   <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('.fa-angle-double-right').click(function() {
-        $('.examples__sidebar-content').toggleClass('examples__sidebar-content--visible');
+    /*====================================
+    =            ON DOM READY            =
+    ====================================*/
+    $(function() {
+      $('.examples__sidebar-content__footer').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleNav();
       });
     });
+
+    /*========================================
+    =            CUSTOM FUNCTIONS            =
+    ========================================*/
+    function toggleNav() {
+      if ($('#site-wrapper').hasClass('show-nav')) {
+        // Do things on Nav Close
+        $('#site-wrapper').removeClass('show-nav');
+        $('.examples__sidebar-content__footer').text('Show');
+      } else {
+        // Do things on Nav Open
+        $('#site-wrapper').addClass('show-nav');
+        $('.examples__sidebar-content__footer').text('Hide');
+      }
+
+      //$('#site-wrapper').toggleClass('show-nav');
+    }
   </script>
 </body>
 </html>
