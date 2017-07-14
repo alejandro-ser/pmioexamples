@@ -3,7 +3,7 @@
 
 Project:  ProcessMaker I/O Examples
 Version:  1.0
-Last changes:  10/07/2017 [  ]
+Last changes:  14/07/2017 [ Fixing bugs on ticket PMIO-110]
 Assigned to:  Alejandro Serna / Luis Suarez
 -------------------------------------------------------------------*/
 
@@ -336,6 +336,10 @@ div.examples__content-import .panel-body .btn--flat {
 
 /* Examples form */
 
+form.examples__content__form {
+  height: 100%;
+}
+
 form.examples__content__form .form-group {
   margin-bottom: 10px;
   margin-right: 6px;
@@ -344,6 +348,7 @@ form.examples__content__form .form-group {
 form.examples__content__form textarea.form-control {
   width: 100%;
   min-height: 150px;
+  margin-bottom: 15px;
 }
 
 /* -----------------------
@@ -394,7 +399,6 @@ i.examples__sidebar-content__footer {
   padding-bottom: 2px;
   text-align: left;
   color: #d4d4d4;
-  border-top: 1px solid #103b5b;
   background-color: #165380;
   font-size: 1.2rem;
   cursor: pointer;
@@ -424,7 +428,7 @@ i.examples__sidebar-content__footer {
   width: 300px;
   height: 150%;
   position: absolute;
-  top: -25px;
+  top: -24px;
   right: -300px;
 }
 
@@ -440,6 +444,15 @@ i.examples__sidebar-content__footer {
 
   nav.navbar>.container-fluid .navbar-brand {
     margin-left: 5px;
+  }
+
+  div.examples__main-content {
+    padding: 20px 15px;
+    margin-right: 15px;
+  }
+
+  #site-wrapper {
+    padding: 25px 0 15px 15px;
   }
 
   #site-menu {
@@ -468,6 +481,15 @@ i.examples__sidebar-content__footer {
   nav.navbar>.container-fluid .navbar-brand {
     margin-left: -5px;
   }
+
+  div.examples__main-content {
+    padding: 30px;
+    margin-right: 25px;
+  }
+
+  #site-wrapper {
+    padding: 25px 0 25px 25px;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -475,6 +497,12 @@ i.examples__sidebar-content__footer {
 
   div.examples__sidebar .nav>li>a {
     padding: 10px 15px;
+  }
+
+  .examples__submenu .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
   }
 
   #site-menu {

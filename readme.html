@@ -88,69 +88,71 @@
           </div>
           <div class="row">
             <div class="examples__content-wrapper col-xs-12 col-sm-8 col-md-8 col-lg-8" id="site-wrapper">
-              <div class="examples__content-canvas" id="site-canvas">
-                <div class="examples__main-content">
-                <h5>BPMN file to start and documentation</h5>
-                <div class="examples__main-content__icons"><i class="fa fa-download"></i><a href="#">BPMN file</a></div>
-                <div class="examples__main-content__icons"><i class="fa fa-file-text-o"></i><a href="#">Description</a></div>
-                <h5>Credentials</h5>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Host</h3>
+              <form class="examples__content__form">
+                <div class="examples__content-canvas" id="site-canvas">
+                  <div class="examples__main-content">
+                  <h5>BPMN file to start and documentation</h5>
+                  <div class="examples__main-content__icons"><i class="fa fa-download"></i><a href="#">BPMN file</a></div>
+                  <div class="examples__main-content__icons"><i class="fa fa-file-text-o"></i><a href="#">Description</a></div>
+                  <h5>Credentials</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Host</h3>
+                    </div>
+                    <div class="panel-body">
+                      <textarea name="name" rows="2" placeholder="URL https://your.domain/api/v1/">
+                      </textarea>
+                      <button type="button" name="button" class="btn--flat">Paste</button>
+                    </div>
                   </div>
-                  <div class="panel-body">
-                    <textarea name="name" rows="2" placeholder="URL https://your.domain/api/v1/">
-                    </textarea>
-                    <button type="button" name="button" class="btn--flat">Paste</button>
-                  </div>
-                </div>
 
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Token key</h3>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Token key</h3>
+                    </div>
+                    <div class="panel-body">
+                      <textarea name="name" rows="5" placeholder="Key for text">
+                      </textarea>
+                      <button type="button" name="button" class="btn--flat">Paste</button>
+                    </div>
                   </div>
-                  <div class="panel-body">
-                    <textarea name="name" rows="5" placeholder="Key for text">
-                    </textarea>
-                    <button type="button" name="button" class="btn--flat">Paste</button>
+                  <button type="button" name="button" class="btn--action">Save key and host</button>
                   </div>
-                </div>
-                <button type="button" name="button" class="btn--action">Save key and host</button>
-                </div>
-                <div class="examples__sidebar-content" id="site-menu">
-                  <i class="examples__sidebar-content__footer">Show</i>
-                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Show request
-                          </a>
-                        </h4>
+                  <div class="examples__sidebar-content" id="site-menu">
+                    <i class="examples__sidebar-content__footer">Show</i>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Show request
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor justo, accumsan id urna id, venenatis consequat eros. Maecenas nisl dolor, blandit sed posuere vitae, pellentesque vitae eros. Nam quis urna vel tortor egestas convallis ornare id purus.
+                          </div>
+                        </div>
                       </div>
-                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Show request
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor justo, accumsan id urna id, venenatis consequat eros. Maecenas nisl dolor, blandit sed posuere vitae, pellentesque vitae eros. Nam quis urna vel tortor egestas convallis ornare id purus.
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Show request
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
