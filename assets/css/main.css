@@ -3,7 +3,7 @@
 
 Project:  ProcessMaker I/O Examples
 Version:  1.0
-Last changes:  14/07/2017 [ Fixing bugs on ticket PMIO-110]
+Last changes:  14/07/2017 [ Fixing bugs on ti]
 Assigned to:  Alejandro Serna / Luis Suarez
 -------------------------------------------------------------------*/
 
@@ -176,7 +176,7 @@ a.btn--flat:hover {
 *     Same column height
 * ------------------------ */
 
-.is-flex,
+/*.is-flex,
 .row.is-flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,9 +196,10 @@ a.btn--flat:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -webkit-flex-direction: row;
   -ms-flex-direction: column;
   flex-direction: column;
-}
+}*/
 
 /* --------------------
 *     Submenu
